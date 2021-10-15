@@ -1,0 +1,41 @@
+.header
+  padding-top: 35px
+  &-top
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &__nav
+      display: flex
+      align-items: center
+    &__logo
+      width: 41px
+      height: 41px
+      object-fit: cover
+  &-nav
+    &__ul
+      display: flex
+    &__item:not(:last-child)
+      margin-right: 35px
+    &__link
+      font-style: normal
+      font-weight: normal
+      font-size: 16px
+      line-height: 19px
+      color: $grey-text-color
+      &--home
+        font-style: normal
+        font-weight: 500
+        font-size: 16px
+        line-height: 19px
+        color: $black-text-color
+  &-buttons
+    margin-left: 35px
+    &__login
+      margin-right: 18px
+      width: 132px
+      height: 44px
+      text-align: center
+    &__register
+      width: 132px
+      height: 44px
+      text-align: center

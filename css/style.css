@@ -385,4 +385,124 @@ button {
   border: none;
   outline: none;
 }
+
+.btn {
+  border-radius: 8px;
+}
+
+.btn-orange {
+  background-color: #FB8F1D;
+  color: #FFFFFF;
+}
+
+.btn-white {
+  background: transparent;
+  border: 1px solid #FB8F1D;
+  color: #FB8F1D;
+}
+
+.header {
+  padding-top: 35px;
+}
+
+.header-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-top__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-top__logo {
+  width: 41px;
+  height: 41px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.header-nav__ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-nav__item:not(:last-child) {
+  margin-right: 35px;
+}
+
+.header-nav__link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #B8BECD;
+}
+
+.header-nav__link--home {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #202336;
+}
+
+.header-buttons {
+  margin-left: 35px;
+}
+
+.header-buttons__login {
+  margin-right: 18px;
+  width: 132px;
+  height: 44px;
+  text-align: center;
+}
+
+.header-buttons__register {
+  width: 132px;
+  height: 44px;
+  text-align: center;
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 700px;
+  }
+  .header-top__nav {
+    display: none;
+  }
+  .header-buttons__login {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 576px;
+    width: 92%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
