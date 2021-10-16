@@ -1,5 +1,13 @@
 .header
   padding-top: 35px
+  padding-bottom: 20px
+  background-color: #fff
+  position: fixed
+  width: 100%
+  top: 0
+  right: 0
+  left: 0
+  z-index: 99
   &-top
     display: flex
     justify-content: space-between
@@ -7,6 +15,7 @@
     &__nav
       display: flex
       align-items: center
+      // margin-right: 100px
     &__logo
       width: 41px
       height: 41px
@@ -30,12 +39,56 @@
         color: $black-text-color
   &-buttons
     margin-left: 35px
+    display: flex
     &__login
       margin-right: 18px
       width: 132px
       height: 44px
       text-align: center
+      font-style: normal
+      font-weight: 500
+      font-size: 15px
+      padding-right: 15px
+      padding-left: 15px
     &__register
       width: 132px
       height: 44px
       text-align: center
+      font-style: normal
+      font-weight: 500
+      font-size: 15px
+      padding-right: 15px
+      padding-left: 15px
+
+.navbar-mobile
+  display: none
+  padding-top: 80px
+  justify-content: center
+  position: fixed
+  top: 100px
+  right: 0
+  left: 0
+  bottom: 0
+  background-color: $grey
+
+.mobile-menu
+  display: flex
+  flex-direction: column
+  align-items: center
+  &__li:not(:last-child)
+    margin-bottom: 10px
+  &__item
+    font-style: normal
+    font-weight: 500
+    font-size: 18px
+    line-height: 19px
+    color: $grey-text-color
+    &--home
+      color: $black-text-color
+
+.menu
+  &-btn
+    display: none
+    background: white
+    &__close-icon
+      display: none

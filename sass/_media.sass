@@ -13,9 +13,39 @@
   .header
     &-top
       &__nav
-        display: none
+        margin-right: 0
+    &-nav
+      display: none
+    &-buttons
+      margin-left: 0
+      margin-right: 20px
+      &__login
+        width: 100px
+        padding-left: 8px
+        padding-right: 8px
+        height: 30px
+        font-size: 12px
+      &__register
+        width: 100px
+        padding-left: 8px
+        padding-right: 8px
+        height: 30px
+        font-size: 12px
+
+  .navbar-mobile
+    &--visible
+      display: flex
+
+  .menu-btn
+    display: flex
 
 @media (max-width: 768px)
   .container
     max-width: 576px
     width: 92%
+
+@media (max-width: 576px)
+  .header
+    &-buttons
+      display: none
+
