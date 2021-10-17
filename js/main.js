@@ -42,3 +42,46 @@ window.addEventListener("click", function (e) {
 $(function(){
 	$("#datepicker").datepicker();
 });
+
+
+// Swiper
+
+const swiper = new Swiper('.swiper', {
+  direction: 'horizontal',
+  loop: true,
+
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
+
+  autoplay: {
+    delay: 5000,
+  },
+
+  navigation: {
+    nextEl: '.testimonials-slide__buttons__next',
+    prevEl: '.testimonials-slide__buttons__prev',
+  },
+
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    320: {
+      slidesPerView: 1,
+    },
+    480: {
+      slidesPerView: 1,
+    },
+    640: {
+      slidesPerView: 1,
+      
+    },
+    1200: {
+      slidesPerView: 1,
+      direction: 'horizontal',
+    },
+  },
+});
+

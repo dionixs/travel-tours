@@ -93,10 +93,34 @@
     &__img
       width: 70%
 
+  .testimonials
+    &-slide
+      &__info
+        margin-right: 20px
+      &__buttons
+        justify-content: center
+        padding: 20px
+        bottom: -80px
+        left: 0
+        width: 100%
+        border-radius: 0
+      &__img
+        width: 200px
+        height: 300px
+        &-block
+          width: 200px
+          height: 300px
+          overflow: visible
+
 @media (max-width: 768px)
   .container
     max-width: 576px
     width: 92%
+
+
+  .testimonials
+    &__wrapper
+      margin-top: 10px
 
 @media (max-width: 576px)
   .header
@@ -124,3 +148,12 @@
     font-size: 20px
   .section-link
     font-size: 14px
+
+
+  .testimonials
+    &-slide
+      &__stars
+        margin-top: 20px
+      &__img
+        &-block
+          display: none
