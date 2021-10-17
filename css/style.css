@@ -5,9 +5,9 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,500;1,600&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -826,6 +826,97 @@ button {
   line-height: 50px;
 }
 
+.featured {
+  padding-top: 192px;
+  padding-bottom: 173px;
+}
+
+.featured__title-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.featured__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 25px;
+          column-gap: 25px;
+  margin-top: 56px;
+}
+
+.featured__block {
+  max-width: 261px;
+  height: 337px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.featured__img {
+  border-radius: 8px;
+  max-width: 261px;
+  height: 337px;
+}
+
+.featured__text {
+  max-width: 120px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #FFFFFF;
+  border-radius: 0px 6px 0px 0px;
+  padding-top: 11px;
+  padding-right: 20px;
+}
+
+.featured__text-title {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 25px;
+  color: #042521;
+}
+
+.featured__text-country {
+  display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  color: #80918E;
+}
+
+.section-link {
+  position: relative;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 60px;
+  color: #FB8F1D;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.section-link span {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
 .container {
   max-width: 1140px;
   margin: auto;
@@ -834,6 +925,12 @@ button {
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
+  }
+  .featured__wrapper {
+    grid-gap: 30px;
+  }
+  .featured__block--hidden {
+    display: none;
   }
 }
 
@@ -906,6 +1003,22 @@ button {
   .section-title {
     font-size: 28px;
   }
+  .featured__wrapper {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .featured__block, .featured__img {
+    max-width: 100%;
+    height: auto;
+  }
+  .featured__block--hidden {
+    display: block;
+  }
 }
 
 @media (max-width: 768px) {
@@ -940,6 +1053,12 @@ button {
   }
   .hasDatepicker {
     width: 100%;
+  }
+  .section-title {
+    font-size: 20px;
+  }
+  .section-link {
+    font-size: 14px;
   }
 }
 /*# sourceMappingURL=style.css.map */
