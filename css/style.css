@@ -1451,7 +1451,11 @@ button {
   .header-buttons {
     display: none;
   }
+  .main {
+    padding-top: 42px;
+  }
   .main__form {
+    padding: 10px;
     max-width: 100%;
   }
   .main__form-group {
@@ -1461,8 +1465,25 @@ button {
             flex-direction: column;
     grid-row-gap: 32px;
   }
+  .main__form-btn {
+    width: 100%;
+  }
+  .main__subtitle {
+    text-align: center;
+  }
+  .main__subtitle::after {
+    margin: auto;
+    margin-top: 50px;
+  }
   .main__title {
+    text-align: center;
     font-size: 40px;
+  }
+  .explore__text {
+    padding: 15px;
+  }
+  .explore__btn {
+    width: 100%;
   }
   .select-wrapper {
     width: 100%;
@@ -1479,14 +1500,49 @@ button {
   .section-link {
     font-size: 14px;
   }
+  .featured {
+    padding-bottom: 70px;
+  }
+  .featured__wrapper {
+    margin-top: 30px;
+    padding: 10px;
+  }
+  .guides__wrapper {
+    padding-left: 10px;
+  }
+  .guides__title {
+    text-align: center;
+  }
+  .guides__btn {
+    max-width: initial;
+    width: 100%;
+  }
+  .testimonials__title {
+    padding-left: 10px;
+  }
+  .testimonials-slide__info {
+    padding: 10px;
+  }
   .testimonials-slide__stars {
+    text-align: center;
     margin-top: 20px;
+  }
+  .testimonials-slide__text {
+    font-size: 18px;
   }
   .testimonials-slide__img-block {
     display: none;
   }
   .stories {
     padding-top: 40px;
+    padding-bottom: 20px;
+  }
+  .stories__title {
+    margin-bottom: 0;
+  }
+  .stories__wrapper {
+    margin-top: 30px;
+    padding: 10px;
   }
   .stories-block {
     max-width: 100%;
@@ -1494,6 +1550,9 @@ button {
   .stories-block__img {
     width: 100%;
     height: 250px;
+  }
+  .footer {
+    padding-top: 36px;
   }
   .footer-top__block-wrapper {
     grid-gap: 40px;

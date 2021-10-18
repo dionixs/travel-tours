@@ -166,13 +166,29 @@
       display: none
 
   .main
+    padding-top: 42px
     &__form
+      padding: 10px
       max-width: 100%
       &-group
         flex-direction: column
         grid-row-gap: 32px
+      &-btn
+        width: 100%
+    &__subtitle
+      text-align: center
+      &::after
+        margin: auto
+        margin-top: 50px
     &__title
+      text-align: center
       font-size: 40px
+
+  .explore
+    &__text
+      padding: 15px
+    &__btn
+      width: 100%
 
   .select-wrapper
     width: 100%
@@ -187,16 +203,44 @@
   .section-link
     font-size: 14px
 
+  .featured
+    padding-bottom: 70px
+    &__wrapper
+      margin-top: 30px
+      padding: 10px
+
+  .guides
+    &__wrapper
+      padding-left: 10px
+    &__title
+      text-align: center
+    &__btn
+      max-width: initial
+      width: 100%
+
   .testimonials
+    &__title
+      padding-left: 10px
     &-slide
+      &__info
+        padding: 10px
       &__stars
+        text-align: center
         margin-top: 20px
+      &__text
+        font-size: 18px
       &__img
         &-block
           display: none
 
   .stories
     padding-top: 40px
+    padding-bottom: 20px
+    &__title
+      margin-bottom: 0
+    &__wrapper
+      margin-top: 30px
+      padding: 10px
     &-block
       max-width: 100%
       &__img
@@ -204,6 +248,7 @@
         height: 250px
 
   .footer
+    padding-top: 36px
     &-top
       &__block
         &-wrapper
